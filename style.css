@@ -1,0 +1,284 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: century;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(1.jpeg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+.nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 10px 12px;
+   position: relative;
+}
+.nav-links ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   transition: 0.5 ease;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #fff;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    color: #f0f0f0;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 0.5s;
+    color: black;
+}
+
+/*----- Second Section -----*/
+
+.ptv{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.ptv h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.ptv-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.ptv-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*----- Third Section -----*/
+
+.food{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.food h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.food-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.food-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0,0,0,0.6);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----- Fourth Section -----*/
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.gallery-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.gallery-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+/*----- Footer Section -----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.fa-heart-o{
+    color: #833535;
+    font-size: 10px;
+}
+
+/*----- Places to visit page -----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url();
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.Places-to-visit{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.pv-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.pv-col img{
+    width: 100%;
+}
+.pv-col h1{
+    padding-top: 0;
+}
+.pv-col p{
+    padding: 15px 0 25px;
+}
+
+/*----- background -----*/
+
+.sub-header{
+   background-color:#833535;
+}
+.body{
+    background: #CDBFBA;
+}
+.color-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #4e4848;
+    border: 1px solid #4e4848;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.color-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 0.5s;
+    color: black;
+}
+
+/*----- Gallery page -----*/
+
+.comment-box{
+    border: 1px solid #bfa8a8;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #bfa8a8;
+}
+.comment-form button{
+    margin: 10px 0;
+}
